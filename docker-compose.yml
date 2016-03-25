@@ -1,5 +1,5 @@
 web:
-    image: wordpress
+    image: oneklc/wp-grinone-com
     links:
      - mysql
     environment:
@@ -11,7 +11,7 @@ web:
      - wordpress/wp-content/:/var/www/html/wp-content
 
 mysql:
-    image: mysql:5.7
+    image: oneklc/wp-grinone-com-mysql
     environment:
      - MYSQL_ROOT_PASSWORD=password
      - MYSQL_DATABASE=wordpress
